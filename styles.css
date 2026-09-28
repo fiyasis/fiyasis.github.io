@@ -680,3 +680,242 @@ h3 {
     scroll-behavior: auto;
   }
 }
+
+/* Marquee band */
+.marquee-band {
+  padding: 34px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Terminals */
+.terminals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 20px;
+  margin-top: 46px;
+}
+
+.terminal {
+  background: #16161a;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(250, 249, 245, 0.1);
+  box-shadow: 0 24px 50px rgba(25, 25, 25, 0.28);
+}
+
+.term-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #202024;
+  border-bottom: 1px solid rgba(250, 249, 245, 0.08);
+}
+
+.term-bar .dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+
+.dot.red {
+  background: #ff5f56;
+}
+.dot.amber {
+  background: #ffbd2e;
+}
+.dot.green {
+  background: #27c93f;
+}
+
+.term-title {
+  margin-left: 10px;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.78rem;
+  color: var(--muted-light);
+}
+
+.term-body {
+  margin: 0;
+  padding: 20px 18px;
+  font-family: "JetBrains Mono", ui-monospace, monospace;
+  font-size: 0.84rem;
+  line-height: 1.75;
+  color: #d7d5cd;
+  white-space: pre-wrap;
+  overflow-x: auto;
+}
+
+.term-body .p {
+  color: var(--kraft);
+}
+.term-body .ok {
+  color: #7fd18a;
+}
+.term-body .warn {
+  color: #ffbd2e;
+}
+.term-body .hi {
+  color: var(--book-cloth);
+}
+.term-body .dim {
+  color: #6f6e68;
+}
+
+/* Logo wall */
+.logogroups {
+  display: grid;
+  gap: 34px;
+  margin-top: 46px;
+}
+
+.logogroup h4 {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.logos img {
+  height: 46px;
+  width: 46px;
+  padding: 10px;
+  background: var(--ivory);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  object-fit: contain;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.logos img:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--book-cloth) 45%, var(--border));
+  box-shadow: 0 10px 22px rgba(25, 25, 25, 0.08);
+}
+
+.brandbadge {
+  display: inline-flex;
+  align-items: center;
+  height: 46px;
+  padding: 0 16px 0 12px;
+  background: var(--ivory);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--slate);
+  position: relative;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.brandbadge::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 3px;
+  background: var(--c, var(--book-cloth));
+  margin-right: 9px;
+}
+
+.brandbadge:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--book-cloth) 45%, var(--border));
+  box-shadow: 0 10px 22px rgba(25, 25, 25, 0.08);
+}
+
+/* Cloud services */
+.cloud-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 46px;
+}
+
+.cloud-card {
+  background: var(--slate-soft);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  padding: 26px 24px;
+}
+
+.cloud-card h4 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ivory);
+  margin-bottom: 18px;
+}
+
+.cloud-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  background: var(--c, var(--kraft));
+  flex: none;
+}
+
+.cloud-card ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cloud-card li {
+  font-size: 0.8rem;
+  color: var(--cloud);
+  background: rgba(250, 249, 245, 0.08);
+  border: 1px solid var(--border-light);
+  border-radius: 999px;
+  padding: 5px 12px;
+}
+
+/* Trust badges */
+.trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.86rem;
+  color: var(--slate);
+  background: var(--ivory-medium);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 16px;
+}
+
+.trust-badge .ic {
+  color: var(--book-cloth);
+}
+
+@media (max-width: 760px) {
+  .logos img,
+  .brandbadge {
+    height: 42px;
+  }
+
+  .term-body {
+    font-size: 0.78rem;
+  }
+}
