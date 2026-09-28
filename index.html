@@ -3,129 +3,369 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fiyasis — App & Website Development Company</title>
+    <title>Fiyasis — Software, AI & Automation Studio</title>
     <meta
       name="description"
-      content="Fiyasis is a full-service app and website development company. We build mobile apps, websites, UI/UX, cloud and AI solutions."
+      content="Fiyasis designs and builds software, AI agents, chatbots, SaaS products and enterprise automation — apps, web, cloud, Salesforce, SAP, n8n and Zapier."
     />
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A66C2'/><text x='50' y='70' font-size='60' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>F</text></svg>" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23CC785C'/><text x='50' y='72' font-size='64' text-anchor='middle' fill='%23FAF9F5' font-family='Georgia,serif' font-weight='700'>F</text></svg>" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Icon sprite -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-mobile" viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><line x1="11" y1="18" x2="13" y2="18"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/></symbol>
+      <symbol id="i-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18c1.2 0 2-.8 2-2 0-.6-.2-1-.6-1.4-.3-.4-.4-.8-.4-1.1 0-.8.7-1.5 1.5-1.5H16a5 5 0 0 0 5-5c0-3.9-4-7-9-7Z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7.5" r="1"/><circle cx="14.5" cy="7.5" r="1"/></symbol>
+      <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a4 4 0 0 1 0-8 5.5 5.5 0 0 1 10.6-1.5A3.5 3.5 0 0 1 18 18Z"/></symbol>
+      <symbol id="i-cart" viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M3 4h2l2.4 11h11L21 7H6"/></symbol>
+      <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 13v-1a8 8 0 0 1 16 0v1"/><rect x="2.5" y="13" width="4" height="6" rx="1.5"/><rect x="17.5" y="13" width="4" height="6" rx="1.5"/><path d="M20 19a3 3 0 0 1-3 3h-3"/></symbol>
+      <symbol id="i-robot" viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="12" rx="3"/><line x1="12" y1="3" x2="12" y2="7"/><circle cx="12" cy="3" r="1.3"/><circle cx="9" cy="13" r="1.3"/><circle cx="15" cy="13" r="1.3"/></symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/></symbol>
+      <symbol id="i-cog" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></symbol>
+      <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 6v6c0 5 3 7.5 7 9 4-1.5 7-4 7-9V6l-7-3Z"/></symbol>
+      <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M7 8h10v4a5 5 0 0 1-10 0V8ZM12 17v4"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    </svg>
+
     <header class="nav">
-      <div class="container nav-inner">
+      <div class="wrap nav-inner">
         <a class="brand" href="/">
-          <span class="logo">F</span>
-          <span>Fiyasis</span>
+          <span class="mark">F</span>
+          <span class="brand-name">Fiyasis</span>
         </a>
-        <nav>
+        <nav class="nav-links">
           <a href="#services">Services</a>
+          <a href="#ai">AI &amp; Automation</a>
+          <a href="#products">Products</a>
+          <a href="#stack">Technology</a>
           <a href="#industries">Industries</a>
-          <a href="#process">Process</a>
-          <a class="btn btn-sm" href="https://www.fiyasis.com/contact-us">Get a Quote</a>
+          <a class="btn btn-dark btn-sm" href="https://www.fiyasis.com/contact-us">Start a project</a>
         </nav>
       </div>
     </header>
 
-    <section class="hero">
-      <div class="container">
-        <span class="pill">App · Web · UI/UX · Cloud · AI</span>
-        <h1>We Build Apps &amp; Websites That Grow Your Business</h1>
-        <p class="lede">
-          Fiyasis is a full-service development company. From strategy and design to
-          launch and support, we turn ideas into digital products people love to use.
-        </p>
-        <div class="cta">
-          <a class="btn" href="https://www.fiyasis.com/contact-us">Get Free Consultation</a>
-          <a class="btn btn-outline" href="#services">See Services</a>
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="wrap">
+          <p class="kicker">Software · AI · Automation Studio</p>
+          <h1>We design and build the software that moves your business forward.</h1>
+          <p class="lede">
+            Fiyasis is a full-service product studio. We build apps, web platforms, AI
+            agents, chatbots, SaaS products and enterprise automation — from strategy and
+            design to launch and support.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="https://www.fiyasis.com/contact-us">Get a free consultation</a>
+            <a class="btn btn-ghost" href="#services">Explore services <svg class="ic"><use href="#i-arrow"/></svg></a>
+          </div>
+
+          <!-- Generated hero artwork (inline SVG) -->
+          <div class="hero-art" role="img" aria-label="Abstract illustration of connected systems and AI agents">
+            <svg viewBox="0 0 1200 520" preserveAspectRatio="xMidYMid slice">
+              <defs>
+                <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#CC785C"/>
+                  <stop offset="1" stop-color="#D4A27F"/>
+                </linearGradient>
+                <linearGradient id="g2" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#191919"/>
+                  <stop offset="1" stop-color="#3a3a37"/>
+                </linearGradient>
+              </defs>
+              <rect width="1200" height="520" fill="#F0EEE6"/>
+              <g stroke="#191919" opacity="0.08">
+                <path d="M0 130h1200M0 260h1200M0 390h1200M200 0v520M400 0v520M600 0v520M800 0v520M1000 0v520"/>
+              </g>
+              <circle cx="980" cy="120" r="150" fill="url(#g1)" opacity="0.85"/>
+              <circle cx="180" cy="430" r="120" fill="#EBDBBC"/>
+              <rect x="380" y="150" width="440" height="230" rx="24" fill="#FAF9F5" stroke="#191919" stroke-opacity="0.12"/>
+              <rect x="410" y="185" width="150" height="12" rx="6" fill="#191919" opacity="0.7"/>
+              <rect x="410" y="215" width="260" height="10" rx="5" fill="#191919" opacity="0.25"/>
+              <rect x="410" y="235" width="220" height="10" rx="5" fill="#191919" opacity="0.25"/>
+              <rect x="410" y="290" width="120" height="34" rx="10" fill="url(#g2)"/>
+              <circle cx="760" cy="300" r="46" fill="none" stroke="#CC785C" stroke-width="3"/>
+              <circle cx="760" cy="300" r="22" fill="#CC785C"/>
+              <g stroke="#CC785C" stroke-width="2" opacity="0.6" fill="none">
+                <path d="M600 300h110M806 300h100M900 180c-40 30-60 70-60 120"/>
+              </g>
+              <circle cx="905" cy="175" r="10" fill="#191919"/>
+              <circle cx="180" cy="120" r="8" fill="#CC785C"/>
+              <circle cx="1080" cy="400" r="8" fill="#191919"/>
+            </svg>
+          </div>
+
+          <!-- Logo / tech marquee -->
+          <div class="marquee" aria-hidden="true">
+            <div class="marquee-track">
+              <span>React</span><span>Next.js</span><span>Node.js</span><span>Python</span><span>Flutter</span><span>React Native</span><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>PostgreSQL</span><span>OpenAI</span><span>LangChain</span><span>n8n</span><span>Zapier</span><span>Make</span><span>Salesforce</span><span>SAP</span><span>HubSpot</span>
+              <span>React</span><span>Next.js</span><span>Node.js</span><span>Python</span><span>Flutter</span><span>React Native</span><span>AWS</span><span>Docker</span><span>Kubernetes</span><span>PostgreSQL</span><span>OpenAI</span><span>LangChain</span><span>n8n</span><span>Zapier</span><span>Make</span><span>Salesforce</span><span>SAP</span><span>HubSpot</span>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="services">
-      <div class="container">
-        <h2>What We Do</h2>
-        <div class="grid">
-          <article class="card">
-            <h3>Mobile App Development</h3>
-            <p>Native and cross-platform apps for iOS and Android.</p>
-          </article>
-          <article class="card">
-            <h3>Website Development</h3>
-            <p>Fast, SEO-ready websites that convert visitors.</p>
-          </article>
-          <article class="card">
-            <h3>UI/UX Design</h3>
-            <p>Research-driven design that makes products intuitive.</p>
-          </article>
-          <article class="card">
-            <h3>Cloud &amp; DevOps</h3>
-            <p>Scalable infrastructure and reliable delivery.</p>
-          </article>
-          <article class="card">
-            <h3>E-commerce Solutions</h3>
-            <p>Secure online stores with payment integration.</p>
-          </article>
-          <article class="card">
-            <h3>Support &amp; Maintenance</h3>
-            <p>Ongoing updates and security to keep products current.</p>
-          </article>
+      <!-- STATS -->
+      <section class="band band-ivory">
+        <div class="wrap stats">
+          <div><strong>8–12<span>wks</span></strong><span>Typical MVP timeline</span></div>
+          <div><strong>iOS + Android</strong><span>Native &amp; cross-platform</span></div>
+          <div><strong>4-step</strong><span>Discover → Design → Develop → Launch</span></div>
+          <div><strong>24×7</strong><span>Support &amp; maintenance</span></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section alt" id="industries">
-      <div class="container">
-        <h2>Industries We Serve</h2>
-        <div class="tags">
-          <span>Banking &amp; Fintech</span>
-          <span>Healthcare</span>
-          <span>Retail</span>
-          <span>Manufacturing</span>
-          <span>Telecom</span>
-          <span>Insurance</span>
-          <span>Energy &amp; Utilities</span>
-          <span>Education</span>
-          <span>Real Estate</span>
+      <!-- SERVICES -->
+      <section class="section" id="services">
+        <div class="wrap">
+          <p class="kicker">What we do</p>
+          <h2>End-to-end services, one accountable team.</h2>
+          <div class="cards">
+            <article class="card">
+              <svg class="ic-lg"><use href="#i-mobile"/></svg>
+              <h3>Mobile App Development</h3>
+              <p>Native and cross-platform apps for iOS and Android — React Native, Flutter, Swift &amp; Kotlin.</p>
+            </article>
+            <article class="card">
+              <svg class="ic-lg"><use href="#i-globe"/></svg>
+              <h3>Website &amp; Web Apps</h3>
+              <p>Fast, SEO-ready marketing sites and complex web platforms with Next.js, React and Node.</p>
+            </article>
+            <article class="card">
+              <svg class="ic-lg"><use href="#i-palette"/></svg>
+              <h3>UI/UX &amp; Product Design</h3>
+              <p>Research-driven design systems, prototypes and interfaces that make products intuitive.</p>
+            </article>
+            <article class="card">
+              <svg class="ic-lg"><use href="#i-cloud"/></svg>
+              <h3>Cloud &amp; DevOps</h3>
+              <p>AWS, Azure and GCP infrastructure, CI/CD, Docker, Kubernetes and Terraform.</p>
+            </article>
+            <article class="card">
+              <svg class="ic-lg"><use href="#i-cart"/></svg>
+              <h3>E-commerce Solutions</h3>
+              <p>Secure online stores with payments, inventory, subscriptions and headless commerce.</p>
+            </article>
+            <article class="card">
+              <svg class="ic-lg"><use href="#i-headset"/></svg>
+              <h3>Support &amp; Maintenance</h3>
+              <p>Ongoing updates, monitoring, security patching and flexible support plans.</p>
+            </article>
+            <article class="card">
+              <svg class="ic-lg"><use href="#i-chart"/></svg>
+              <h3>Data &amp; Analytics</h3>
+              <p>Dashboards, ETL pipelines, BI reporting and data warehouse integrations.</p>
+            </article>
+            <article class="card">
+              <svg class="ic-lg"><use href="#i-shield"/></svg>
+              <h3>QA &amp; Cybersecurity</h3>
+              <p>Automated testing, penetration testing, audit logging and compliance-ready builds.</p>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="process">
-      <div class="container">
-        <h2>Our Process</h2>
-        <ol class="steps">
-          <li><strong>Discover</strong><span>We understand your goals, users, and constraints.</span></li>
-          <li><strong>Design</strong><span>We prototype and refine the product experience.</span></li>
-          <li><strong>Develop</strong><span>We build in sprints with regular reviews.</span></li>
-          <li><strong>Launch</strong><span>We deploy, test, and support your product.</span></li>
-        </ol>
-      </div>
-    </section>
+      <!-- AI & AUTOMATION -->
+      <section class="section band-ivory" id="ai">
+        <div class="wrap">
+          <p class="kicker">AI &amp; automation</p>
+          <h2>Intelligent systems that work while you sleep.</h2>
+          <p class="section-lede">
+            From conversational AI to fully autonomous agents and no-code workflow
+            automation — we connect your tools so your team stops doing repetitive work.
+          </p>
+          <div class="cards cards-3">
+            <article class="card card-feature">
+              <svg class="ic-lg"><use href="#i-robot"/></svg>
+              <h3>AI Chatbots</h3>
+              <p>Customer support and sales bots on web, WhatsApp, Instagram and Messenger — trained on your own knowledge base with RAG.</p>
+              <ul class="chips">
+                <li>RAG</li><li>OpenAI</li><li>Claude</li><li>WhatsApp API</li>
+              </ul>
+            </article>
+            <article class="card card-feature">
+              <svg class="ic-lg"><use href="#i-cog"/></svg>
+              <h3>AI Agents</h3>
+              <p>Autonomous agents that research, draft, qualify leads, triage tickets and take actions across your systems.</p>
+              <ul class="chips">
+                <li>LangChain</li><li>Tool calling</li><li>Vector DB</li><li>MCP</li>
+              </ul>
+            </article>
+            <article class="card card-feature">
+              <svg class="ic-lg"><use href="#i-bolt"/></svg>
+              <h3>Workflow Automation</h3>
+              <p>Connect 1000+ apps and automate operations end-to-end without heavy code.</p>
+              <ul class="chips">
+                <li>n8n</li><li>Zapier</li><li>Make</li><li>RPA</li><li>Webhooks</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
 
-    <section class="cta-band">
-      <div class="container">
-        <h2>Have a project in mind?</h2>
-        <a class="btn btn-light" href="https://www.fiyasis.com/contact-us">Start a Conversation</a>
-      </div>
-    </section>
+      <!-- PRODUCTS -->
+      <section class="section" id="products">
+        <div class="wrap">
+          <p class="kicker">Products we build</p>
+          <h2>SaaS products &amp; platforms, ready to scale.</h2>
+          <div class="products">
+            <article class="product">
+              <span class="product-tag">SaaS</span>
+              <h3>SaaS Product Development</h3>
+              <p>Multi-tenant apps with authentication, billing, subscriptions, admin dashboards and role-based access.</p>
+              <p class="product-tech">Next.js · Postgres · Stripe · Auth</p>
+            </article>
+            <article class="product">
+              <span class="product-tag">Chatbot</span>
+              <h3>AI Chatbot Platform</h3>
+              <p>Deploy a branded assistant across channels, with analytics, handoff to humans and a live agent inbox.</p>
+              <p class="product-tech">LLMs · RAG · Omnichannel</p>
+            </article>
+            <article class="product">
+              <span class="product-tag">Agent</span>
+              <h3>AI Agent Platform</h3>
+              <p>Build, schedule and monitor autonomous agents that operate your business workflows.</p>
+              <p class="product-tech">Agents · Tools · Observability</p>
+            </article>
+            <article class="product">
+              <span class="product-tag">Support</span>
+              <h3>Support &amp; Helpdesk Suite</h3>
+              <p>Ticketing, SLAs, live chat, knowledge base and AI-assisted replies for your support team.</p>
+              <p class="product-tech">Tickets · SLA · KB · CSAT</p>
+            </article>
+            <article class="product">
+              <span class="product-tag">Commerce</span>
+              <h3>E-commerce &amp; Payments</h3>
+              <p>Storefronts, checkout, subscriptions, inventory and payment integrations.</p>
+              <p class="product-tech">Shopify · Stripe · Razorpay</p>
+            </article>
+            <article class="product">
+              <span class="product-tag">Automation</span>
+              <h3>Internal Tools &amp; Ops</h3>
+              <p>Custom admin panels, approval flows and dashboards that replace spreadsheets.</p>
+              <p class="product-tech">Low-code · APIs · RPA</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ENTERPRISE INTEGRATIONS -->
+      <section class="section band-slate">
+        <div class="wrap">
+          <p class="kicker kicker-light">Enterprise integrations</p>
+          <h2 class="light">We plug into the systems you already run.</h2>
+          <p class="section-lede light">
+            CRM, ERP, payments, messaging and productivity — connected and automated
+            through secure, reliable APIs.
+          </p>
+          <div class="integration-grid">
+            <div class="igroup">
+              <h4>CRM &amp; ERP</h4>
+              <ul><li>Salesforce</li><li>SAP</li><li>Microsoft Dynamics</li><li>HubSpot</li><li>Zoho</li><li>Odoo</li><li>NetSuite</li></ul>
+            </div>
+            <div class="igroup">
+              <h4>Automation &amp; iPaaS</h4>
+              <ul><li>n8n</li><li>Zapier</li><li>Make</li><li>Workato</li><li>Power Automate</li><li>Apache Airflow</li></ul>
+            </div>
+            <div class="igroup">
+              <h4>Payments &amp; Commerce</h4>
+              <ul><li>Stripe</li><li>Razorpay</li><li>PayPal</li><li>Shopify</li><li>WooCommerce</li><li>Square</li></ul>
+            </div>
+            <div class="igroup">
+              <h4>Messaging &amp; Comms</h4>
+              <ul><li>WhatsApp Business</li><li>Twilio</li><li>Slack</li><li>Telegram</li><li>SendGrid</li><li>FCM Push</li></ul>
+            </div>
+            <div class="igroup">
+              <h4>Productivity &amp; Data</h4>
+              <ul><li>Google Workspace</li><li>Microsoft 365</li><li>Notion</li><li>Airtable</li><li>Snowflake</li><li>BigQuery</li></ul>
+            </div>
+            <div class="igroup">
+              <h4>Auth &amp; Identity</h4>
+              <ul><li>Auth0</li><li>Clerk</li><li>Firebase Auth</li><li>Okta</li><li>Google / Apple SSO</li></ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECHNOLOGY STACK -->
+      <section class="section" id="stack">
+        <div class="wrap">
+          <p class="kicker">Full technology stack</p>
+          <h2>Every layer of the modern stack.</h2>
+          <div class="stack">
+            <div class="stack-col"><h4>Frontend</h4><ul><li>React</li><li>Next.js</li><li>Vue</li><li>Angular</li><li>TypeScript</li><li>Tailwind CSS</li><li>Svelte</li></ul></div>
+            <div class="stack-col"><h4>Mobile</h4><ul><li>React Native</li><li>Flutter</li><li>Swift (iOS)</li><li>Kotlin (Android)</li><li>Expo</li><li>PWA</li></ul></div>
+            <div class="stack-col"><h4>Backend</h4><ul><li>Node.js</li><li>Python</li><li>Django</li><li>FastAPI</li><li>Go</li><li>Java / Spring</li><li>.NET</li><li>GraphQL</li></ul></div>
+            <div class="stack-col"><h4>AI &amp; ML</h4><ul><li>OpenAI</li><li>Anthropic Claude</li><li>LangChain</li><li>LlamaIndex</li><li>Hugging Face</li><li>PyTorch</li><li>TensorFlow</li><li>Pinecone</li></ul></div>
+            <div class="stack-col"><h4>Data &amp; Databases</h4><ul><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Redis</li><li>ClickHouse</li><li>Snowflake</li><li>BigQuery</li><li>Elasticsearch</li></ul></div>
+            <div class="stack-col"><h4>Cloud &amp; DevOps</h4><ul><li>AWS</li><li>Azure</li><li>Google Cloud</li><li>Docker</li><li>Kubernetes</li><li>Terraform</li><li>GitHub Actions</li><li>Vercel</li><li>Cloudflare</li></ul></div>
+            <div class="stack-col"><h4>Testing &amp; Security</h4><ul><li>Vitest</li><li>Playwright</li><li>Jest</li><li>Cypress</li><li>OWASP</li><li>Snyk</li><li>SonarQube</li></ul></div>
+            <div class="stack-col"><h4>Design &amp; Tools</h4><ul><li>Figma</li><li>Framer</li><li>Storybook</li><li>Linear</li><li>Jira</li><li>Git</li><li>Postman</li></ul></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INDUSTRIES -->
+      <section class="section band-ivory" id="industries">
+        <div class="wrap">
+          <p class="kicker">Industries we serve</p>
+          <h2>Domain experience across sectors.</h2>
+          <div class="industries">
+            <span>Banking &amp; Fintech</span><span>Healthcare</span><span>Retail</span><span>Manufacturing</span><span>Telecom</span><span>Insurance</span><span>Energy &amp; Utilities</span><span>Education</span><span>Real Estate</span><span>Logistics</span><span>SaaS &amp; Startups</span><span>Government</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESS -->
+      <section class="section" id="process">
+        <div class="wrap">
+          <p class="kicker">How we work</p>
+          <h2>A transparent, four-step process.</h2>
+          <ol class="steps">
+            <li><span class="step-no">01</span><h3>Discover</h3><p>We understand your goals, users and constraints.</p></li>
+            <li><span class="step-no">02</span><h3>Design</h3><p>We prototype and refine the product experience.</p></li>
+            <li><span class="step-no">03</span><h3>Develop</h3><p>We build in sprints with regular reviews.</p></li>
+            <li><span class="step-no">04</span><h3>Launch</h3><p>We deploy, test, monitor and support your product.</p></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-band">
+        <div class="wrap">
+          <h2>Have a project in mind?</h2>
+          <p>Tell us what you want to build — apps, AI agents, SaaS or automation. We'll help you ship it.</p>
+          <div class="hero-actions center">
+            <a class="btn btn-light" href="https://www.fiyasis.com/contact-us">Start a conversation</a>
+            <a class="btn btn-outline-light" href="https://www.fiyasis.com">Visit fiyasis.com</a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer">
-      <div class="container footer-inner">
-        <div>
-          <a class="brand" href="/">
-            <span class="logo">F</span>
-            <span>Fiyasis</span>
-          </a>
-          <p>App &amp; website development company building digital products that drive real business results.</p>
+      <div class="wrap footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="/"><span class="mark">F</span><span class="brand-name">Fiyasis</span></a>
+          <p>Software, AI &amp; automation studio building digital products that drive real business results.</p>
         </div>
-        <div class="footer-links">
-          <a href="https://github.com/fiyasis">GitHub</a>
-          <a href="https://www.fiyasis.com">fiyasis.com</a>
-          <a href="https://www.facebook.com/fiyasys">Facebook</a>
-        </div>
+        <div><h5>Services</h5><ul><li>App Development</li><li>Web Development</li><li>UI/UX Design</li><li>Cloud &amp; DevOps</li></ul></div>
+        <div><h5>AI &amp; Automation</h5><ul><li>AI Chatbots</li><li>AI Agents</li><li>n8n &amp; Zapier</li><li>SaaS Products</li></ul></div>
+        <div><h5>Company</h5><ul><li><a href="https://www.fiyasis.com/about-us">About</a></li><li><a href="https://www.fiyasis.com/work">Our Work</a></li><li><a href="https://www.fiyasis.com/career">Careers</a></li><li><a href="https://www.fiyasis.com/contact-us">Contact</a></li></ul></div>
+        <div><h5>Connect</h5><ul><li><a href="https://github.com/fiyasis">GitHub</a></li><li><a href="https://www.fiyasis.com">fiyasis.com</a></li><li><a href="https://www.facebook.com/fiyasys">Facebook</a></li></ul></div>
       </div>
-      <p class="copyright">© <span id="year"></span> Fiyasis. All rights reserved.</p>
+      <div class="wrap copyright">
+        <span>© <span id="year"></span> Fiyasis. All rights reserved.</span>
+        <span>Made with care in India.</span>
+      </div>
     </footer>
 
     <script>
