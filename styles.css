@@ -909,6 +909,269 @@ h3 {
   color: var(--book-cloth);
 }
 
+/* Page hero (inner pages) */
+.page-hero {
+  padding: 96px 0 44px;
+  text-align: center;
+}
+
+.page-hero h1 {
+  max-width: 940px;
+  margin: 0 auto 18px;
+}
+
+.lede.center {
+  margin: 0 auto;
+}
+
+.more {
+  margin-top: 40px;
+}
+
+.logos.showcase {
+  gap: 12px;
+  margin-top: 40px;
+}
+
+.logos.showcase img {
+  height: 54px;
+  width: 54px;
+}
+
+.nav-links a.active {
+  color: var(--slate);
+  font-weight: 500;
+}
+
+/* Pricing */
+.price-group-title {
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  margin: 64px 0 24px;
+}
+
+.price-group-title:first-of-type {
+  margin-top: 0;
+}
+
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
+  background: var(--ivory);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 30px 26px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.plan:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(25, 25, 25, 0.08);
+}
+
+.plan.featured {
+  border-color: var(--slate);
+  box-shadow: 0 18px 44px rgba(25, 25, 25, 0.1);
+}
+
+.plan-head h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  font-family: var(--serif);
+  font-size: 2.5rem;
+  line-height: 1;
+  color: var(--slate);
+}
+
+.plan-price .curr {
+  font-size: 1.2rem;
+  vertical-align: super;
+  color: var(--muted);
+  margin-right: 2px;
+}
+
+.plan-price .unit {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  color: var(--muted);
+  margin-left: 4px;
+}
+
+.plan-head > p {
+  color: var(--muted);
+  font-size: 0.92rem;
+  margin: 12px 0 0;
+}
+
+.plan-features {
+  display: grid;
+  gap: 10px;
+  margin: 22px 0 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.plan-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.plan-features .ic {
+  color: var(--book-cloth);
+  flex: none;
+  margin-top: 4px;
+}
+
+.plan-cta {
+  margin-top: auto;
+  justify-content: center;
+}
+
+.custom-quote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 56px;
+  padding: 32px;
+  background: var(--ivory-medium);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+}
+
+.custom-quote h3 {
+  margin-bottom: 6px;
+}
+
+.custom-quote p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.price-note {
+  margin-top: 26px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* Contact */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-form label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--slate);
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  background: var(--ivory);
+  color: var(--text);
+  width: 100%;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: 2px solid var(--book-cloth);
+  outline-offset: 0;
+  border-color: transparent;
+}
+
+.contact-side {
+  background: var(--ivory-medium);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.contact-side h3 {
+  margin-bottom: 4px;
+}
+
+.contact-side ul {
+  display: grid;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+.contact-side li {
+  display: grid;
+  gap: 2px;
+}
+
+.contact-side li strong {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--book-cloth);
+  font-weight: 600;
+}
+
+.contact-side a {
+  color: var(--slate);
+}
+
+.contact-side a:hover {
+  color: var(--book-cloth);
+}
+
+.contact-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 1080px) {
+  .nav-links {
+    gap: 16px;
+    font-size: 0.86rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 760px) {
   .logos img,
   .brandbadge {
@@ -917,5 +1180,14 @@ h3 {
 
   .term-body {
     font-size: 0.78rem;
+  }
+
+  .page-hero {
+    padding: 64px 0 28px;
+  }
+
+  .logos.showcase img {
+    height: 46px;
+    width: 46px;
   }
 }
