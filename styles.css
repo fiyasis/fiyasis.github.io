@@ -8,6 +8,7 @@
   --kraft: #d4a27f;
   --book-cloth: #cc785c;
   --book-cloth-dark: #b8664c;
+  --accent-text: #9c4a2b;
   --slate: #191919;
   --slate-soft: #2c2c2a;
   --text: #191919;
@@ -110,7 +111,7 @@ h3 {
   letter-spacing: 0.14em;
   font-size: 0.72rem;
   font-weight: 600;
-  color: var(--book-cloth);
+  color: var(--accent-text);
   margin: 0 0 20px;
 }
 
@@ -237,6 +238,44 @@ h3 {
   color: var(--slate);
 }
 
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 42px;
+  height: 42px;
+  padding: 0 10px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 2px;
+  background: var(--slate);
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+body.nav-lock {
+  overflow: hidden;
+}
+
 /* Hero */
 .hero {
   padding: 92px 0 40px;
@@ -298,7 +337,7 @@ h3 {
 .marquee-track span {
   font-family: var(--serif);
   font-size: 1.1rem;
-  color: var(--muted-light);
+  color: var(--muted);
   white-space: nowrap;
 }
 
@@ -447,7 +486,7 @@ h3 {
   font-weight: 600;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--book-cloth);
+  color: var(--accent-text);
   margin-bottom: 16px;
 }
 
@@ -553,7 +592,7 @@ h3 {
 .step-no {
   font-family: var(--serif);
   font-size: 0.95rem;
-  color: var(--book-cloth);
+  color: var(--accent-text);
 }
 
 .steps h3 {
@@ -651,8 +690,43 @@ h3 {
 }
 
 @media (max-width: 760px) {
-  .nav-links a:not(.btn) {
+  .nav-toggle {
+    display: inline-flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
     display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    background: var(--ivory);
+    border-bottom: 1px solid var(--border);
+    padding: 6px 5% 20px;
+    box-shadow: 0 24px 44px rgba(25, 25, 25, 0.1);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 13px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 1rem;
+  }
+
+  .nav-links a.active {
+    color: var(--book-cloth);
+  }
+
+  .nav-links a.btn {
+    margin-top: 16px;
+    border-bottom: none;
+    justify-content: center;
   }
 
   .section,
@@ -760,7 +834,7 @@ h3 {
   color: var(--book-cloth);
 }
 .term-body .dim {
-  color: #6f6e68;
+  color: #a8a69d;
 }
 
 /* Logo wall */
@@ -906,7 +980,7 @@ h3 {
 }
 
 .trust-badge .ic {
-  color: var(--book-cloth);
+  color: var(--accent-text);
 }
 
 .card-actions {
@@ -1037,7 +1111,7 @@ h3 {
 }
 
 .plan-features .ic {
-  color: var(--book-cloth);
+  color: var(--accent-text);
   flex: none;
   margin-top: 4px;
 }
@@ -1148,7 +1222,7 @@ h3 {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--book-cloth);
+  color: var(--accent-text);
   font-weight: 600;
 }
 
